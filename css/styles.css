@@ -141,6 +141,7 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.025em;
   line-height: 1.08;
   max-width: 580px;
+  margin: 0 auto;
 }
 
 /* Inner page hero */
@@ -163,6 +164,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--steel);
   max-width: 520px;
   line-height: 1.7;
+  margin: 0 auto;
 }
 
 
@@ -174,6 +176,7 @@ a { color: inherit; text-decoration: none; }
 
 .section-inner {
   max-width: var(--max-w);
+  margin: 0 auto;
 }
 
 
@@ -181,6 +184,7 @@ a { color: inherit; text-decoration: none; }
 
 .stage-list {
   max-width: var(--max-w);
+  margin: 0 auto;
 }
 
 .stage {
@@ -228,7 +232,7 @@ a { color: inherit; text-decoration: none; }
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   max-width: 860px;
-  margin-bottom: 52px;
+  margin: 0 auto 52px;
 }
 
 .pricing-card {
@@ -307,6 +311,7 @@ a { color: inherit; text-decoration: none; }
 
 .pricing-addons {
   max-width: 860px;
+  margin: 0 auto;
   border-top: 0.5px solid var(--border);
   padding-top: 44px;
   display: grid;
@@ -383,6 +388,11 @@ a { color: inherit; text-decoration: none; }
 .cta-strip {
   background: var(--black);
   padding: 60px 40px;
+}
+
+.cta-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
 }
 
 .cta-strip h2 {
@@ -499,6 +509,7 @@ a { color: inherit; text-decoration: none; }
 
 .path-sections {
   max-width: var(--max-w);
+  margin: 0 auto;
 }
 
 .path-block {
@@ -530,6 +541,7 @@ a { color: inherit; text-decoration: none; }
 
 .work-placeholder {
   max-width: var(--max-w);
+  margin: 0 auto;
 }
 
 .work-placeholder p {
@@ -546,6 +558,7 @@ a { color: inherit; text-decoration: none; }
 
 .about-body {
   max-width: var(--max-w);
+  margin: 0 auto;
 }
 
 .about-body p {
@@ -578,6 +591,8 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.7;
   margin-bottom: 24px;
   max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
