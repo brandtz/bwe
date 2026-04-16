@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Brandtworks-Enterprises</title>
+  <meta name="description" content="Brandtworks-Enterprises is a web and software company based in Springfield, Oregon. We build professional websites for local businesses — and we're building something larger.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="nav" id="main-nav">
+    <a href="index.html" class="nav-brand" aria-label="Brandtworks-Enterprises home">
+      <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M6 16L6 6L16 6" stroke="#1E3A5F" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
+        <path d="M24 34L34 34L34 24" stroke="#1E3A5F" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
+      </svg>
+      <div class="nav-brand-text">
+        <span class="nav-brand-primary">BWE</span>
+        <span class="nav-brand-secondary">Brandtworks-Enterprises</span>
+      </div>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
+        <rect x="0" y="0" width="20" height="2" rx="1" fill="currentColor"/>
+        <rect x="0" y="6" width="20" height="2" rx="1" fill="currentColor"/>
+        <rect x="0" y="12" width="20" height="2" rx="1" fill="currentColor"/>
+      </svg>
+    </button>
+    <ul class="nav-links" id="nav-menu" role="list">
+      <li><a href="index.html#what-we-build">What we build</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="our-work.html">Our work</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="get-started.html" class="nav-cta">Get started</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <header class="page-hero">
+      <h1>About BWE</h1>
+    </header>
+
+    <section class="section">
+      <div class="about-body">
+        <p>Brandtworks-Enterprises is a web and software company based in Springfield, Oregon. We build professional websites for local businesses — fast, affordable, and built to be found.</p>
+        <p>We believe every local business deserves a web presence that actually represents them. Not a template anyone could clone. Not a DIY site builder with stock photos. A real website, built with intention, designed for how your customers actually search and decide.</p>
+        <p>Our approach is straightforward: we do the work upfront so you don't have to. We arrive with a site already designed around your industry — your services, your market, your neighborhood. You review it, we refine it, you launch with something ready to work.</p>
+        <p>We're also building something larger. A connected local marketplace that will make it easier for customers to discover, browse, and buy from independent businesses in their community. It isn't live yet. But every site we build is laying the foundation — and the businesses on our platform now will be the first inside when it's ready.</p>
+        <p>We work with businesses of all kinds, in Eugene and Springfield and well beyond. If you're ready to get online the right way, we're ready to build it.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <svg width="18" height="18" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M6 16L6 6L16 6" stroke="#1E3A5F" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
+        <path d="M24 34L34 34L34 24" stroke="#1E3A5F" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
+      </svg>
+      <p>© 2025 Brandtworks-Enterprises LLC</p>
+    </div>
+    <p class="footer-tagline">Eugene / Springfield, OR — and beyond</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    toggle.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+</body>
+</html>

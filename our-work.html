@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Work — Brandtworks-Enterprises</title>
+  <meta name="description" content="Showcase sites and client work from Brandtworks-Enterprises. Professional websites built for local businesses.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="nav" id="main-nav">
+    <a href="index.html" class="nav-brand" aria-label="Brandtworks-Enterprises home">
+      <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M6 16L6 6L16 6" stroke="#1E3A5F" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
+        <path d="M24 34L34 34L34 24" stroke="#1E3A5F" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
+      </svg>
+      <div class="nav-brand-text">
+        <span class="nav-brand-primary">BWE</span>
+        <span class="nav-brand-secondary">Brandtworks-Enterprises</span>
+      </div>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
+        <rect x="0" y="0" width="20" height="2" rx="1" fill="currentColor"/>
+        <rect x="0" y="6" width="20" height="2" rx="1" fill="currentColor"/>
+        <rect x="0" y="12" width="20" height="2" rx="1" fill="currentColor"/>
+      </svg>
+    </button>
+    <ul class="nav-links" id="nav-menu" role="list">
+      <li><a href="index.html#what-we-build">What we build</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="our-work.html" class="active">Our work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="get-started.html" class="nav-cta">Get started</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <header class="page-hero">
+      <h1>Work we're proud of.</h1>
+      <p>Showcase sites and client builds across the industries we serve.</p>
+    </header>
+
+    <section class="section">
+      <div class="work-placeholder">
+        <p>We're building a portfolio of showcase sites across the industries we work with most — restaurants and cafés, specialty retail, service contractors, health and wellness businesses, and more. Each one built to the same standard we'd bring to your project: clean design, clear copy, built to be found.</p>
+        <p>Currently in progress. Check back soon.</p>
+        <p>In the meantime, the best way to see our work is to let us show you what we'd build for your business specifically. We arrive with a site already tailored to your industry — so the conversation starts with something real, not a blank page.</p>
+        <a href="get-started.html" class="btn btn-navy">See what we'd build for you</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <svg width="18" height="18" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M6 16L6 6L16 6" stroke="#1E3A5F" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
+        <path d="M24 34L34 34L34 24" stroke="#1E3A5F" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
+      </svg>
+      <p>© 2025 Brandtworks-Enterprises LLC</p>
+    </div>
+    <p class="footer-tagline">Eugene / Springfield, OR — and beyond</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    toggle.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+</body>
+</html>
