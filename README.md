@@ -1,45 +1,40 @@
-# BWE — Brandtworks-Enterprises LLC
+# Brandtworks Enterprises website
 
-Public-facing marketing site for [Brandtworks-Enterprises LLC](https://brandtworks-enterprises.com) — a web and software company based in Springfield, Oregon.
+Public marketing website for Brandtworks-Enterprises LLC. The production site is plain HTML, CSS, and JavaScript; there is no framework or build step.
 
-## Stack
+## Pages
 
-Static HTML/CSS. No framework, no build tool, no dependencies. Deployable directly to Netlify from this repository.
+- `index.html` — home, services overview, Studio37 feature, Bulwark development note, and process
+- `services.html` — Presence, commerce, restaurant, and enterprise services
+- `work.html` — selected projects and Studio37 case study
+- `pricing.html` — Presence tiers, Basic support, and custom-scoped services
+- `get-started.html` — project inquiry form
+- `thank-you.html` — Netlify Forms success destination
+- `privacy-policy.html` and `eula.html` — legal information
+- `404.html` — not-found page
 
-## Structure
+Legacy paths redirect to their replacements: `capabilities.html` to services, `our-work.html` to work, and `about.html` to the home page process section.
 
-```
-/
-├── index.html          # Homepage
-├── pricing.html        # Pricing tiers
-├── our-work.html       # Portfolio (placeholder, in progress)
-├── about.html          # Company story
-├── get-started.html    # Inquiry forms (3 paths)
-├── thank-you.html      # Post-form redirect
-├── 404.html            # Custom 404
-├── favicon.svg         # SVG favicon
-├── netlify.toml        # Netlify 404 redirect rule
-└── css/
-    └── styles.css      # Single shared stylesheet
-```
+## Design system
 
-## Deployment
+The production implementation follows `BWE Design System/readme.md` and its CSS tokens: fog/slate surfaces, mist-blue brand accents, Bricolage Grotesque display type, Instrument Sans body copy, Instrument Serif emphasis, and JetBrains Mono labels. Production assets are copied into `assets/`; the source package remains separate. Shared styles and responsive behavior live in `css/site.css` and `js/site.js`.
 
-This site is connected to Netlify via this repository. Every push to the main branch triggers an automatic redeploy.
+The React/Babel website kit is a visual/content reference, not a production dependency. Do not link the generated bundle or prototype runtime from live pages.
 
-- **Build command:** none
-- **Publish directory:** `/` (root)
-- **Forms:** Netlify Forms (`data-netlify="true"`) — three forms on `get-started.html`
-- **Custom 404:** wired via `netlify.toml`
+## Pricing and offers
 
-To deploy manually: connect this repo to a Netlify site and point DNS for `brandtworks-enterprises.com` to the Netlify-provided domain. SSL is provisioned automatically.
+Presence tiers follow the design spec: Essential $250, Professional $500, Complete $750. Basic support is listed at $20/month. Standard/Premium support prices in the design kit are placeholders and are intentionally not published; other support and growth work is discussed and scoped with the customer. Commerce, restaurant, and enterprise builds are custom-scoped.
 
-## Development
+## Forms and deployment
 
-No build step. Edit HTML and CSS directly and push.
+The inquiry form uses Netlify Forms (`project-inquiry`) and posts to `/thank-you.html`. Netlify discovers the form after deployment. Confirm the form appears in the Netlify dashboard and set up submission notifications before announcing the new site. This replaces the legacy `build-inquiry`, `capabilities-inquiry`, and `custom-platform-inquiry` forms; historical submissions remain in Netlify, but form-specific notifications/settings may need to be transferred.
 
-```bash
-git clone git@github.com:brandtz/bwe.git
-cd bwe
-# open any .html file in a browser or use a local server
-```
+Netlify publishes the repository root. The configuration retains the 404 handler and permanently redirects legacy routes. Test the form after deployment; local file previews cannot submit to Netlify.
+
+## Local preview
+
+Serve the repository root with any static HTTP server and open `index.html`. No package installation or compilation is required. Google Fonts are loaded remotely; system fallbacks are defined in CSS.
+
+## Legacy snapshot
+
+`archive/legacy-placeholder/` contains a local copy of the previous site and is ignored by Git so it is not published or added as a new tracked archive. It was preserved before the rebuild. The `BWE_SITE_BRIEF.md` is an earlier brief and should not be treated as the current design or offer source.

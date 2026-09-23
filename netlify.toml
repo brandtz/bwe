@@ -1,6 +1,24 @@
 # Netlify configuration — Brandtworks-Enterprises
 
 [[redirects]]
+  from = "/capabilities.html"
+  to = "/services.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/our-work.html"
+  to = "/work.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about.html"
+  to = "/index.html#process"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/404.html"
   status = 404

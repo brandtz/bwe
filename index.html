@@ -1,118 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brandtworks-Enterprises — Web Presence for Local Businesses</title>
-  <meta name="description" content="We build professional websites for local small businesses — from a clean web presence to full ecommerce. Based in Springfield, Oregon and building for businesses everywhere.">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F3F4F1">
+  <meta name="description" content="Websites and software for local businesses, built around how you work. Presence sites, e-commerce, restaurant ordering, and custom business tools.">
+  <title>Brandtworks Enterprises | Websites and software, built around you</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="js/site.js" defer></script>
 </head>
 <body>
-
-  <nav class="nav" id="main-nav">
-    <a href="index.html" class="nav-brand" aria-label="Brandtworks-Enterprises home">
-      <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M6 16L6 6L16 6" stroke="#1E3A5F" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
-        <path d="M24 34L34 34L34 24" stroke="#1E3A5F" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
-      </svg>
-      <div class="nav-brand-text">
-        <span class="nav-brand-primary">BWE</span>
-        <span class="nav-brand-secondary">Brandtworks-Enterprises</span>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-nav">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Brandtworks Enterprises home">
+        <img class="brand-mark" src="assets/logo/bwe-mark-on-light.svg" alt="">
+        <span class="brand-copy"><span class="brand-name">Brandtworks</span><span class="brand-meta"><span>Enterprises</span><span>Est 2025</span></span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-links" aria-label="Open navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav-links" id="primary-links">
+        <li><a href="services.html">Services</a></li><li><a href="work.html">Work</a></li><li><a href="index.html#bulwark">Bulwark</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="index.html#process">Process</a></li><li><a class="button button-small" href="get-started.html">Start a project <span class="button-arrow" aria-hidden="true">→</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Brandtworks Enterprises · Springfield, Oregon</span>
+          <h1>Websites and software, built around <span class="serif">your</span> business.</h1>
+          <p class="hero-lede">Presence sites, e-commerce, restaurant ordering, and business tools. We learn how you work, build something real, and refine it with you until it fits.</p>
+          <div class="hero-actions"><a class="button" href="get-started.html">Start a project <span class="button-arrow" aria-hidden="true">→</span></a><a class="button button-secondary" href="work.html">See our work</a></div>
+        </div>
+        <div class="service-ribbon" aria-label="Services at a glance">
+          <a href="services.html#presence"><strong>Presence</strong><span>Websites from $250</span></a>
+          <a href="services.html#commerce"><strong>Commerce</strong><span>Custom scoped</span></a>
+          <a href="services.html#restaurants"><strong>Restaurants</strong><span>Branded ordering</span></a>
+          <a href="services.html#enterprise"><strong>Enterprise tools</strong><span>Workflow-specific apps</span></a>
+        </div>
       </div>
-    </a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
-        <rect x="0" y="0" width="20" height="2" rx="1" fill="currentColor"/>
-        <rect x="0" y="6" width="20" height="2" rx="1" fill="currentColor"/>
-        <rect x="0" y="12" width="20" height="2" rx="1" fill="currentColor"/>
-      </svg>
-    </button>
-    <ul class="nav-links" id="nav-menu" role="list">
-      <li><a href="#what-we-build" class="active">What we build</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="our-work.html">Our work</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="get-started.html" class="nav-cta">Get started</a></li>
-    </ul>
-  </nav>
-
-  <main>
-
-    <header class="hero">
-      <h1>We build websites for local businesses.</h1>
-    </header>
-
+    </section>
     <section class="section" id="what-we-build">
-      <div class="stage-list">
-
-        <div class="stage">
-          <h2>Presence</h2>
-          <p>Most small business owners don't need a web developer on retainer — they need a professional site that works, looks the part, and gets out of the way. That's what we build.</p>
-          <p>We arrive with a site already designed for your industry. Real pages, real copy structure, real mobile layout — customized to your business name, your services, and your neighborhood before you ever see it. What you're reviewing isn't a mockup. It's your site.</p>
-          <p>Domain setup, hosting, contact forms, and a care plan if you want us to keep it running — everything a local business needs to show up online the right way.</p>
-          <a href="pricing.html" class="stage-price">Starting at $250 — optional care plan available</a>
-        </div>
-
-        <div class="stage">
-          <h2>Commerce</h2>
-          <p>A web presence gets you found. Commerce gets you paid. When your business is ready to sell online — products, services, appointments, or all three — we build the infrastructure to make it happen.</p>
-          <p>We don't prescribe a platform. We scope the project around how your business actually works, then build and configure the right solution — whether that's a full online store, a booking system, or a custom-built ecommerce operation.</p>
-          <p>Every commerce build includes the full presence foundation. You're not bolting a store onto a bad website — you're building the whole thing right, once.</p>
-          <a href="get-started.html" class="stage-price">Custom scoped — let's talk</a>
-        </div>
-
-        <div class="stage">
-          <h2>Marketplace</h2>
-          <p>Every business we build is a future node in something larger. We're assembling a connected local marketplace — a single destination where customers can discover, browse, and buy from independent businesses in their community.</p>
-          <p>It's not live yet. But businesses already on our platform will be the first inside when it is.</p>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="cta-strip">
-      <div class="cta-inner">
-        <h2>Ready to get started?</h2>
-        <p>Whether you need a site, want to sell online, or just want to know what's coming — there's a path for you.</p>
-        <div class="cta-buttons">
-          <a href="get-started.html" class="btn btn-white">Get a presence site</a>
-          <a href="get-started.html#commerce" class="btn btn-outline-white">Let's talk commerce</a>
-          <a href="get-started.html#marketplace" class="btn btn-outline-white">Notify me about the marketplace</a>
+      <div class="container">
+        <div class="section-heading"><span class="eyebrow"><span class="eyebrow-index">01</span> What we build</span><h2>From a clear presence to a <span class="serif">full</span> platform.</h2><p>Four kinds of builds. Every one starts with a conversation and is shaped around how your business actually runs.</p></div>
+        <div class="grid grid-two" style="margin-top:48px">
+          <a class="service-card" href="services.html#presence"><div class="service-card-top"><span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 9v11"/></svg></span><span class="eyebrow-index eyebrow">01 · Presence</span></div><h3>A professional site that gets you found.</h3><p>For businesses that need a clear, credible home online, without a site they have to babysit.</p><ul><li><span class="check">✓</span> Mobile-first pages and contact forms</li><li><span class="check">✓</span> Domain, hosting, and search basics set up</li></ul><span class="card-link">Explore presence sites <span aria-hidden="true">→</span></span></a>
+          <a class="service-card" href="services.html#commerce"><div class="service-card-top"><span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 9H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg></span><span class="eyebrow">02 · Commerce</span></div><h3>Sell online. Run it from one admin.</h3><p>Catalogs, checkout, and a back office for inventory, orders, leads, and media.</p><ul><li><span class="check">✓</span> Product catalog and Stripe payments</li><li><span class="check">✓</span> Admin tools tailored to your operation</li></ul><span class="card-link">Explore commerce <span aria-hidden="true">→</span></span></a>
+          <a class="service-card" href="services.html#restaurants"><div class="service-card-top"><span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7M4 3v4a3 3 0 0 0 6 0V3M7 10v11M17 3v18M17 3c3 2 3 7 0 9"/></svg></span><span class="eyebrow">03 · Restaurants</span></div><h3>Your menu, ordering, and brand.</h3><p>Branded online ordering for restaurants, built for the way customers use their phones.</p><ul><li><span class="check">✓</span> Easy-to-update menus and specials</li><li><span class="check">✓</span> Online ordering across web and mobile</li></ul><span class="card-link">Explore restaurant builds <span aria-hidden="true">→</span></span></a>
+          <a class="service-card" href="services.html#enterprise"><div class="service-card-top"><span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 9h.01M15 9h.01"/></svg></span><span class="eyebrow">04 · Enterprise tools</span></div><h3>Software shaped around your workflow.</h3><p>Custom applications for teams that have outgrown spreadsheets, led by Bulwark.</p><ul><li><span class="check">✓</span> Role-based portals and permissions</li><li><span class="check">✓</span> Documents, payments, and messaging</li></ul><span class="card-link">Explore enterprise tools <span aria-hidden="true">→</span></span></a>
         </div>
       </div>
     </section>
-
+    <section class="section section-surface">
+      <div class="container feature-split">
+        <div class="frame"><div class="media"><img src="assets/work/studio37-bench.jpg" alt="Handcrafted live-edge bench made by Studio37 Custom Designs" loading="lazy"><img src="assets/work/studio37-logo.png" alt="Studio37 Custom Designs" style="position:absolute;left:22px;bottom:20px;width:auto;height:48px;object-fit:contain"></div></div>
+        <div class="feature-copy"><span class="eyebrow"><span class="eyebrow-index">02</span> Featured work</span><h2>Studio37 Custom Designs</h2><p>A woodworking shop needed more than a gallery. We built a catalog with Stripe checkout and an admin panel to manage the work behind the storefront.</p><ul class="check-list"><li><span class="check">✓</span> Product catalog and portfolio</li><li><span class="check">✓</span> Stripe checkout</li><li><span class="check">✓</span> Inventory and order management</li><li><span class="check">✓</span> Leads and product media</li></ul><div class="tag-row"><span class="tag">Commerce</span><span class="tag">Stripe</span><span class="tag">Admin panel</span></div><a class="button button-secondary" href="work.html#studio37">Read the case study <span class="button-arrow" aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+    <section class="section" id="bulwark">
+      <div class="container"><div class="dark-band" data-theme="dark">
+        <div class="section-heading"><span class="eyebrow">Enterprise · Bulwark <span class="badge"><span class="badge-dot"></span> In development</span></span><h2>Construction management, <span class="serif">end to end.</span></h2><p>Bulwark is an in-development construction management platform, designed to connect a job from first lead through final invoice.</p></div>
+        <div class="module-grid"><article class="module"><h3>Leads and estimates</h3><p>Capture inquiries, prepare quotes, and track work forward.</p></article><article class="module"><h3>Projects and inspections</h3><p>Keep schedules, permits, inspections, and job status together.</p></article><article class="module"><h3>Invoices and documents</h3><p>Organize payments and project records in one workspace.</p></article><article class="module"><h3>Customer portal</h3><p>Give customers a place to view documents, pay, and ask questions.</p></article><article class="module"><h3>Subcontractor access</h3><p>Share the right job details with each trade partner.</p></article><article class="module"><h3>Built for real workflows</h3><p>Shape practical software around how teams coordinate work.</p></article></div>
+        <a class="button button-inverse" href="services.html#enterprise" style="margin-top:26px">About Bulwark <span class="button-arrow" aria-hidden="true">→</span></a>
+      </div></div>
+    </section>
+    <section class="section" id="process">
+      <div class="container"><div class="section-heading"><span class="eyebrow"><span class="eyebrow-index">03</span> How we work</span><h2>Built <span class="serif">with</span> you, not for you.</h2><p>We start with your business, show working pages early, and keep refining until the result fits.</p></div>
+        <ol class="process-grid"><li class="process-step"><span class="process-number">01</span><h3>Interview</h3><p>We learn how your business runs, who you serve, and what needs to change.</p></li><li class="process-step"><span class="process-number">02</span><h3>Build</h3><p>We shape the scope and start building. You see real pages early, not a slide deck.</p></li><li class="process-step"><span class="process-number">03 · REPEAT</span><h3>Refine</h3><p>We gather your feedback and adjust the work until it feels right.</p></li><li class="process-step"><span class="process-number">04</span><h3>Launch &amp; support</h3><p>We launch together and agree on the right support for what comes next.</p></li></ol>
+      </div>
+    </section>
+    <section class="cta-wrap"><div class="container"><div class="cta-panel"><div><h2>Let's build it <span class="serif">right</span>, together.</h2><p>Tell us what your business needs. We’ll set up a conversation, no pressure and no sales pitch.</p></div><div class="cta-actions"><a class="button button-inverse" href="get-started.html">Start a project <span class="button-arrow" aria-hidden="true">→</span></a><a class="button button-secondary" href="pricing.html">See pricing</a></div></div></div></section>
   </main>
-
-  <footer class="footer">
-    <div class="footer-brand">
-      <svg width="18" height="18" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M6 16L6 6L16 6" stroke="#1E3A5F" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
-        <path d="M24 34L34 34L34 24" stroke="#1E3A5F" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
-      </svg>
-      <p>© 2025 Brandtworks-Enterprises LLC</p>
-    </div>
-    <p class="footer-tagline">Eugene / Springfield, OR — and beyond</p>
-  </footer>
-
-  <script>
-    const toggle = document.getElementById('nav-toggle');
-    const menu = document.getElementById('nav-menu');
-    toggle.addEventListener('click', () => {
-      const isOpen = menu.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(isOpen));
-    });
-    menu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        menu.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      });
-    });
-  </script>
-
+  <footer class="site-footer"><div class="container"><div class="footer-main"><div class="footer-intro"><a class="brand" href="index.html"><img class="brand-mark" src="assets/logo/bwe-mark-on-light.svg" alt=""><span class="brand-copy"><span class="brand-name">Brandtworks</span><span class="brand-meta"><span>Enterprises</span><span>Est 2025</span></span></span></a><p>Websites and software, built around your business.<br>Eugene / Springfield, OR — and beyond.</p></div><div class="footer-col"><h2>Explore</h2><ul><li><a href="services.html">Services</a></li><li><a href="work.html">Work</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="index.html#process">How we work</a></li></ul></div><div class="footer-col"><h2>Services</h2><ul><li><a href="services.html#presence">Presence sites</a></li><li><a href="services.html#commerce">Commerce</a></li><li><a href="services.html#restaurants">Restaurants</a></li><li><a href="services.html#enterprise">Enterprise tools</a></li></ul></div><div class="footer-col"><h2>Company</h2><ul><li><a href="get-started.html">Start a project</a></li><li><a href="privacy-policy.html">Privacy</a></li><li><a href="eula.html">Terms</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Brandtworks-Enterprises LLC</p><p>Built with you, not for you.</p></div></div></footer>
 </body>
 </html>
